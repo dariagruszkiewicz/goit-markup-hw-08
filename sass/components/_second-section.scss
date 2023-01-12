@@ -1,0 +1,38 @@
+.second-section {
+  padding-bottom: 0px;
+  padding-top: 94px;
+
+  &__container {
+    @extend .container;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 0.88rem;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $secondaryColorGrey;
+  }
+
+  &__list {
+    display: flex;
+    width: 1170px;
+    padding-left: 0px;
+    gap: 30px;
+  }
+
+  &__icons {
+    height: 120px;
+    width: 270px;
+    padding: 25px 100px;
+    background-color: $backgroundColorGray;
+    margin-bottom: 30px;
+  }
+}

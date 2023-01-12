@@ -1,0 +1,39 @@
+@use './utils/vars' as *;
+@import './components/navigation';
+@import './components/header';
+@import './components/logo';
+@import './components/first-section';
+@import './components/second-section';
+@import './components/third-section';
+@import './components/employee-section';
+@import './components/our-customers-section';
+@import './components/portfolio';
+@import './components/footer';
+@import './components/form-button';
+@import './components/form-checkbox';
+@import './components/modal';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $primaryColor;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+ul {
+  list-style-type: none;
+}

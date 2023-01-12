@@ -1,0 +1,49 @@
+.third-section {
+  @extend .section;
+  width: 1170px;
+
+  &__container {
+    @extend .container;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+  }
+
+  &__description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    height: 70px;
+    width: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #2f303acc;
+    font-weight: 700;
+    font-size: 0.88rem;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $secondaryColorWhite;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+    margin: 0 auto;
+  }
+}

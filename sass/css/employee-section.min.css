@@ -1,0 +1,82 @@
+.employee-section {
+  background-color: #f5f4fa;
+}
+.employee-section__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1170px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 0px;
+}
+.employee-section__item {
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706), 0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
+  border-radius: 0px 0px 4px 4px;
+}
+.employee-section__img {
+  vertical-align: middle;
+}
+.employee-section__social-links {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
+}
+.employee-section__social-links-item {
+  width: 44px;
+  height: 44px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px;
+  fill: #afb1b8;
+}
+.employee-section__social-links-item__social-links-item:hover,
+.employee-section__social-links-item__social-links-item:focus {
+  fill: #fff;
+  cursor: pointer;
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+.employee-section__title {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+.employee-section__names {
+  font-weight: 500;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: #fff;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.employee-section__position {
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+  background-color: #fff;
+  padding-bottom: 30px;
+} /*# sourceMappingURL=employee-section.min.css.map */

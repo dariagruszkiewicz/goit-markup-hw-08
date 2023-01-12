@@ -1,0 +1,38 @@
+.form-checkbox {
+  position: relative;
+
+  &__confirm {
+    margin-left: 52px;
+    height: 16px;
+    width: 16px;
+    border-radius: 2px;
+
+    &:checked + .form-checkbox--icon {
+      visibility: visible;
+    }
+  }
+
+  &--icon {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    left: 52px;
+    top: 1px;
+    fill: $secondaryColorWhite;
+    background-color: $specialColor;
+    border-radius: 2px;
+    visibility: hidden;
+  }
+
+  &__text {
+    font-size: 0.87rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.03em;
+    color: $secondaryColorGrey;
+    margin-left: 5px;
+
+    & a {
+      color: $specialColor;
+    }
+  }
+}

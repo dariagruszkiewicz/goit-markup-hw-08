@@ -1,0 +1,42 @@
+.our-customers-section {
+  @extend .section;
+  width: 1170px;
+
+  &__container {
+    @extend .container;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+    margin: 0 auto;
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    fill: $iconsFillingColor;
+  }
+
+  &__item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid $iconsFillingColor;
+    border-radius: 4px;
+    padding: 17.71px 32px 14.25px;
+    transition: border-color $transitionDurationDefault $transitionsFunctionDefault;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      fill: $specialColor;
+      border-color: $specialColor;
+    }
+  }
+}
