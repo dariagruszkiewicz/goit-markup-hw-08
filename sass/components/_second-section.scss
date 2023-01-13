@@ -2,6 +2,7 @@
   padding-bottom: 0px;
   // padding-top: 94px;
   padding-top: 60px;
+  margin-left: 15px;
 
   // &__container {
   //   @extend .container;
@@ -67,11 +68,19 @@
   // }
 
 
-   &__icons {
-    height: 120px;
-    width: 450px;
-    padding: 25px 100px;
-    background-color: $backgroundColorGray;
-    margin-bottom: 30px;
+  //  &__icons {
+  //   height: 120px;
+  //   width: 450px;
+  //   padding: 25px 100px;
+  //   background-color: $backgroundColorGray;
+  //   margin-bottom: 30px;
+
+
+    &__icons {
+      height: 120px;
+      width: 450px;
+      padding: 25px 100px;
+      background-color: $backgroundColorGray;
+      margin-bottom: 30px;
   }
 }
