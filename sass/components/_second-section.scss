@@ -1,10 +1,23 @@
 .second-section {
   padding-bottom: 0px;
-  padding-top: 94px;
+  // padding-top: 94px;
+  padding-top: 60px;
+
+  // &__container {
+  //   @extend .container;
+  // }
 
   &__container {
-    @extend .container;
-  }
+      @extend .container-mobile;
+    }
+
+  // &__title {
+  //   font-weight: 700;
+  //   font-size: 0.88rem;
+  //   line-height: 1.14;
+  //   letter-spacing: 0.03em;
+  //   text-transform: uppercase;
+  // }
 
   &__title {
     font-weight: 700;
@@ -12,6 +25,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
   }
 
   &__description {
@@ -21,16 +35,41 @@
     color: $secondaryColorGrey;
   }
 
-  &__list {
+  // &__description {
+  //   font-size: 0.88rem;
+  //   line-height: 1.7;
+  //   letter-spacing: 0.03em;
+  //   color: $secondaryColorGrey;
+  // }
+
+ &__list {
     display: flex;
-    width: 1170px;
+    flex-wrap: wrap;
     padding-left: 0px;
     gap: 30px;
   }
 
-  &__icons {
+
+  // &__list {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   width: 1170px;
+  //   padding-left: 0px;
+  //   gap: 30px;
+  // }
+
+  // &__icons {
+  //   height: 120px;
+  //   width: 270px;
+  //   padding: 25px 100px;
+  //   background-color: $backgroundColorGray;
+  //   margin-bottom: 30px;
+  // }
+
+
+   &__icons {
     height: 120px;
-    width: 270px;
+    width: 450px;
     padding: 25px 100px;
     background-color: $backgroundColorGray;
     margin-bottom: 30px;

@@ -1,28 +1,83 @@
 .first-section {
-  @extend .section;
+  @extend .section-mobile;
   background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
-    url('../images/background.jpg');
-  max-width: 1600px;
-  margin: 0px auto;
+    url('../images/header/background-480.jpg');
+    background-repeat: no-repeat;
+  max-width: 480px;
+  height: 400px;
+  margin: 0px;
   display: flex;
 
-  &__container {
-    @extend .container;
-  }
 
-  &__title {
-    color: $secondaryColorWhite;
-    font-size: 2.75rem;
-    font-weight: 900;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    display: flex;
-    text-align: center;
-    padding-top: 106px;
-    padding-right: 237px;
-    padding-left: 237px;
+  // .first-section {
+  //   @extend .section;
+  // background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
+  //   url('../images/background.jpg');
+  // max-width: 1600px;
+  // margin: 0px auto;
+  // display: flex;
+
+  // &__container {
+  //   @extend .container;
+  // }
+
+  &__container {
+    max-width: 480px;
     margin: 0 auto;
   }
+  
+
+  &__title {
+      color: $secondaryColorWhite;
+      font-size: 1.62rem;
+      font-weight: 900;
+      line-height: 1.6;
+      letter-spacing: 0.06em;
+      display: flex;
+      text-align: center;
+      padding-top: 24px;
+      padding-right: 58px;
+      padding-left: 57px;
+      margin: 0 auto;
+    }
+
+  // &__title {
+  //   color: $secondaryColorWhite;
+  //   font-size: 2.75rem;
+  //   font-weight: 900;
+  //   line-height: 1.36;
+  //   letter-spacing: 0.06em;
+  //   display: flex;
+  //   text-align: center;
+  //   padding-top: 106px;
+  //   padding-right: 237px;
+  //   padding-left: 237px;
+  //   margin: 0 auto;
+  // }
+
+  // &__button {
+  //   font-weight: 700;
+  //   line-height: 1.88;
+  //   text-align: center;
+  //   letter-spacing: 0.06em;
+  //   color: $secondaryColorWhite;
+  //   background-color: $specialColor;
+  //   display: flex;
+  //   width: 200px;
+  //   height: 50px;
+  //   justify-content: center;
+  //   align-items: center;
+  //   margin: 30px 527px 106px 527px;
+  //   border-radius: $borderRadiusDefault;
+  //   border: none;
+  //   transition: opacity $transitionDurationDefault $transitionsFunctionDefault;
+
+  //   &:hover,
+  //   &:focus {
+  //     cursor: pointer;
+  //     opacity: 0.75;
+  //   }
+  // }
 
   &__button {
     font-weight: 700;
@@ -36,7 +91,7 @@
     height: 50px;
     justify-content: center;
     align-items: center;
-    margin: 30px 527px 106px 527px;
+    margin: 30px 140px 118px 140px;
     border-radius: $borderRadiusDefault;
     border: none;
     transition: opacity $transitionDurationDefault $transitionsFunctionDefault;
