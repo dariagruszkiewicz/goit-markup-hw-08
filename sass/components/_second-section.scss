@@ -1,7 +1,7 @@
 .second-section {
-  padding-bottom: 0px;
+  @extend .section-mobile;
+  // padding-bottom: 0px;
   // padding-top: 94px;
-  padding-top: 60px;
   margin-left: 15px;
 
   // &__container {
