@@ -73,7 +73,8 @@
   margin-right: 78px;
 
   &__container {
-    @extend .container;
+    // @extend .container;
+    @extend .container-mobile;
   }
 
   &__list {
