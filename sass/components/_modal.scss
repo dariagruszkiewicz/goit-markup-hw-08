@@ -56,7 +56,7 @@
       transition: fill $transitionDurationDefault $transitionsFunctionDefault;
 
     &:hover {
-      fill: #cf3f3a;
+      fill: $specialColor;
     }
   }
 
