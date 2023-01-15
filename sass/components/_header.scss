@@ -1,5 +1,6 @@
 .header {
-  @extend .container-mobile;
+  min-width: 320px;
+  max-width: 480px;
   // display: flex;
   // height: 80px;
   // align-items: center;

@@ -2,7 +2,7 @@
   @extend .section-mobile;
   // padding-bottom: 0px;
   // padding-top: 94px;
-  margin-left: 15px;
+  // margin-left: 15px;
 
   // &__container {
   //   @extend .container;
@@ -29,7 +29,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
   }
 
   &__description {
@@ -40,7 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin-left: 15px;
   }
 
   // &__description {
@@ -88,13 +87,13 @@
   //   background-color: $backgroundColorGray;
   //   margin-bottom: 30px;
 
-&__icons-box{
-  background-color: $backgroundColorGray;
-  max-width: 100%;
-}
-
-  &__icons {
-
+  &__icons-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: $backgroundColorGray;
+    width: 100%;
+    height: 120px;
     margin-bottom: 30px;
-  }}
+  }
+}
