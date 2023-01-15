@@ -1,9 +1,11 @@
 .header {
+  @extend .container-mobile;
   // display: flex;
   // height: 80px;
   // align-items: center;
   display: flex;
   height: 80px;
+  max-width: 100%;
   align-items: center;
   margin-left: 15px;
 
@@ -11,12 +13,14 @@
     width: 145px;
     display: flex;
     justify-content: flex-start;
-    margin-right: 93px;
+    padding-left: 15px;
+    // margin-right: 93px;
   }
 
   &__container {
     // @extend .container;
-  @extend .container-mobile;}
+    @extend .container-mobile;
+  }
 
   &__link {
     display: none;
