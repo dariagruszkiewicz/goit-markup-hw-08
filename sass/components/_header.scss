@@ -5,16 +5,16 @@
   // height: 80px;
   // align-items: center;
   display: flex;
-  height: 80px;
+  // height: 80px;
   max-width: 100%;
   align-items: center;
-  margin-left: 15px;
+  justify-content: space-between;
 
   &__logo {
     width: 145px;
     display: flex;
-    justify-content: flex-start;
-    padding-left: 15px;
+    // justify-content: flex-start;
+    // padding-left: 15px;
     // margin-right: 93px;
   }
 
