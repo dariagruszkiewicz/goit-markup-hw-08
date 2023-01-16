@@ -56,3 +56,10 @@ img {
 ul {
   list-style-type: none;
 }
+
+div {
+  min-height: auto;
+  height: min-content;
+  max-width: 100%;
+  overflow-x: hidden;
+}
