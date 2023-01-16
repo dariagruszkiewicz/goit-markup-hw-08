@@ -1,5 +1,6 @@
 .first-section {
-  @extend .section-mobile;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
     url('../images/header/background-480.jpg');
   background-repeat: no-repeat;
@@ -51,7 +52,8 @@
     }
   }
 }
-@media screen and (min-width: 1200px), (min-device-pixel-ratio: 2),
+@media screen and (min-width: 1200px),
+  (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .first-section {

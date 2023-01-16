@@ -5,7 +5,8 @@
   &__container {
     min-width: 320px;
     max-width: 480px;
-    margin: 0 auto;
+    margin: 0 auto;    
+
   }
 
   &__title {
@@ -21,6 +22,7 @@
   &__list {
     list-style-type: none;
     display: flex;
+    justify-content:center;
     flex-wrap: wrap;
     gap: 30px;
     padding-left: 0px;
@@ -53,11 +55,14 @@
     &__container {
       max-width: 1200px;
       margin: 0 auto;
+      display: flex;
+      justify-content: center;
     }
 
     &__list {
       justify-content: space-between;
-      padding-left: 0px;
+      max-width: 100%;
+      flex-wrap: nowrap;
     }
 
     &__item {

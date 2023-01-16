@@ -157,9 +157,11 @@
 
 .mobile-menu-social-media-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   align-items: center;
   padding-top: 64px;
+  
 
   &__item {
     font-weight: 500;
