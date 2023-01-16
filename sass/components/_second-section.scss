@@ -1,7 +1,6 @@
 .second-section {
-  @extend .section-mobile;
-  // padding-top: 60px;
-  // padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__container {
     min-width: 320px;
@@ -58,14 +57,13 @@
 
 @media screen and (min-width: 1200px) {
   .second-section {
-    padding-bottom: 0px;
+    padding-bottom: 94px;
     padding-top: 94px;
     margin-left: 15px;
 
     &__container {
-      @extend .section;
-      // max-width: 1200px;
-      // margin: 0 auto;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     &__list {
