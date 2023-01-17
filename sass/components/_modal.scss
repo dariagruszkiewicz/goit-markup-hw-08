@@ -25,18 +25,22 @@
 //   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
 
 .modal {
-    height: 609px;
-    width: 450px;
-    background: $secondaryColorWhite;
-    border-radius: 4px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: flex;
-    flex-direction:column;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
+  height: 609px;
+  width: 450px;
+  background: $secondaryColorWhite;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
 
+  &__button-box{
+    display: flex;
+justify-content: flex-end;
+  }
   // &__close-btn {
   //   height: 30px;
   //   width: 30px;
@@ -48,14 +52,16 @@
   //   transition: fill $transitionDurationDefault $transitionsFunctionDefault;
 
   &__close-btn {
-      height: 30px;
-      width: 30px;
-      position: absolute;
-      top: 10px;
-      left: 412px;
-      border: 1px solid #0000001a;
-      border-radius: 50%;
-      transition: fill $transitionDurationDefault $transitionsFunctionDefault;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #0000001a;
+    border-radius: 50%;
+    transition: fill $transitionDurationDefault $transitionsFunctionDefault;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:8px;
+    margin-right: 8px;
 
     &:hover {
       fill: $specialColor;
@@ -68,7 +74,8 @@
     line-height: 0.87rem;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-top: 34px;
+    padding-left: 40px;
+    padding-right:40px;
   }
 
   &__form {
@@ -100,6 +107,7 @@
       border-radius: $borderRadiusDefault;
       margin-bottom: 10px;
       padding-left: 42px;
+      display: flex;
 
       &:enabled {
         color: $secondaryColorGrey;
@@ -109,6 +117,7 @@
 
   &__form-item {
     position: relative;
+    display: flex;
 
     & input {
       transition: border-color $transitionDurationDefault $transitionsFunctionDefault,
