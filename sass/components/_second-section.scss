@@ -27,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 15px;
   }
 
   &__list {
@@ -53,6 +54,31 @@
     height: 120px;
     margin-bottom: 30px;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .second-section {
+      margin-left: 15px;
+  
+      &__container {
+        max-width: 768px;
+        margin: 0 auto;
+      }
+  
+      &__list {
+        flex-wrap: wrap;
+      }
+      &__icons-box {
+        width: 354px;
+      }
+      &__item {
+        max-width: 354px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
 }
 
 @media screen and (min-width: 1200px) {

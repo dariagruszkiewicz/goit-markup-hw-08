@@ -1,11 +1,8 @@
 .header {
   min-width: 320px;
-  max-width: 480px;
-  // display: flex;
+  // max-width: 480px;
   height: 60px;
-  // align-items: center;
   display: flex;
-  // height: 80px;
   max-width: 100%;
   align-items: center;
   justify-content: space-between;
@@ -13,66 +10,80 @@
   &__logo {
     width: 145px;
     display: flex;
-    // justify-content: flex-start;
-    // padding-left: 15px;
-    // margin-right: 93px;
   }
 
   &__container {
-    // @extend .container;
-    @extend .container-mobile;
+    min-width: 320px;
+    max-width: 480px;
+    margin: 0 auto;
   }
 
-  &__link {
+  &__list{
     display: none;
-    // color: $secondaryColorGrey;
-    // text-decoration: none;
-    // font-weight: 500;
-    // font-size: 0.88rem;
-    // line-height: 1.14px;
-    // letter-spacing: 0.02em;
-    // transition: color $transitionDurationDefault $transitionsFunctionDefault;
   }
+}
 
-  &__icons {
-    display: none;
-    // margin-right: 10px;
-    // fill: $iconsFillingColor;
-  }
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 80px;
 
-  &__list {
-    display: none;
-    // list-style-type: none;
-    // display: flex;
-    // gap: 30px;
-  }
+    &__logo {
+      justify-content: flex-start;
+      padding-left: 15px;
+      margin-right: 93px;
+    }
+    &__container {
+      min-width: 1200px;
+    }
 
-  &__item {
-    display: none;
-    // display: flex;
-    // align-items: center;
+    &__link {
+      color: $secondaryColorGrey;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.88rem;
+      line-height: 1.14px;
+      letter-spacing: 0.02em;
+      transition: color $transitionDurationDefault $transitionsFunctionDefault;
+    }
 
-    // &:hover {
-    //   cursor: pointer;
+    &__icons {
+      margin-right: 10px;
+      fill: $iconsFillingColor;
+    }
 
-    //   & > .header__icons {
-    //     fill: $specialColor;
-    //   }
+    &__list {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+    }
 
-    //   & > .header__link {
-    //     color: $specialColor;
-    //   }
-    // }
+    &__item {
+      display: flex;
+      align-items: center;
 
-    // &:focus {
-    //   cursor: pointer;
+      &:hover {
+        cursor: pointer;
 
-    //   & > .header__icons {
-    //     fill: $specialColor;
-    //   }
+        & > .header__icons {
+          fill: $specialColor;
+        }
 
-    //   & > .header__link {
-    //     color: $specialColor;
-    //   }
+        & > .header__link {
+          color: $specialColor;
+        }
+      }
+
+      &:focus {
+        cursor: pointer;
+
+        & > .header__icons {
+          fill: $specialColor;
+        }
+
+        & > .header__link {
+          color: $specialColor;
+        }
+      }
+    }
   }
 }
