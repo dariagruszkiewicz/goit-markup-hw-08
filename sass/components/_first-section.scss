@@ -52,6 +52,18 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px),
+  (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .first-section {
+    background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
+      url('../images/header/background-768.jpg');
+    max-width: 768px;
+  }
+}
+
 @media screen and (min-width: 1200px),
   (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -80,12 +92,3 @@
     }
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px),
-  (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .first-section {
-    background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
-      url('../images/header/background-768.jpg');
-    max-width: 768px;
-}}

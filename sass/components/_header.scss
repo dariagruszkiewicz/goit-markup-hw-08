@@ -1,11 +1,13 @@
 .header {
   min-width: 320px;
-  // max-width: 480px;
   height: 60px;
   display: flex;
-  max-width: 100%;
   align-items: center;
   justify-content: space-between;
+  max-width: 480px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
   &__logo {
     width: 145px;
@@ -18,14 +20,87 @@
     margin: 0 auto;
   }
 
-  &__list{
+  &__list {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header {
+    height: 80px;
+    justify-content: center;
+    max-width: 100%;
+
+    &__logo {
+      justify-content: flex-start;
+      padding-left: 15px;
+      margin-right: 43px;
+    }
+    &__container {
+      min-width: 1200px;
+    }
+
+    &__link {
+      color: $secondaryColorGrey;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.88rem;
+      line-height: 1.14px;
+      letter-spacing: 0.02em;
+      transition: color $transitionDurationDefault $transitionsFunctionDefault;
+    }
+
+    &__icons {
+      margin-right: 10px;
+      fill: $iconsFillingColor;
+    }
+
+    &__list {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 15px;
+      gap: 10px;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        cursor: pointer;
+
+        & > .header__icons {
+          fill: $specialColor;
+        }
+
+        & > .header__link {
+          color: $specialColor;
+        }
+      }
+
+      &:focus {
+        cursor: pointer;
+
+        & > .header__icons {
+          fill: $specialColor;
+        }
+
+        & > .header__link {
+          color: $specialColor;
+        }
+      }
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header {
     height: 80px;
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
 
     &__logo {
       justify-content: flex-start;
@@ -54,7 +129,7 @@
     &__list {
       list-style-type: none;
       display: flex;
-      gap: 20px;
+      gap: 30px;
     }
 
     &__item {
