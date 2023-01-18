@@ -26,7 +26,6 @@
   }
 
   &__text {
-    // font-size: 0.87rem;
     font-size: 0.75rem;
     line-height: 1.5rem;
     letter-spacing: 0.03em;
@@ -38,3 +37,11 @@
     }
   }
 }
+ @media screen and(min-width:1200px) {
+  .form-checkbox{
+    
+    &__text{
+      font-size: 0.87rem;
+    }
+  }
+ }
