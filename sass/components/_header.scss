@@ -99,8 +99,8 @@
   .header {
     height: 80px;
     max-width: 100%;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0;
+    justify-content: flex-start;
 
     &__logo {
       justify-content: flex-start;
@@ -129,7 +129,9 @@
     &__list {
       list-style-type: none;
       display: flex;
+      justify-content: flex-start;
       gap: 30px;
+      padding-left: 0;
     }
 
     &__item {

@@ -150,14 +150,20 @@
     text-align: center;
   }
 
+&__label{
+  display: flex;
+  justify-content: center;
+}
+
   &__input {
     background-color: #2f303a;
-    max-width: 450px;
+    width: 450px;
     height: 50px;
     border: 1px solid #ffffff4d;
     border-radius: $borderRadiusDefault;
     padding-left: 16px;
     display: flex;
+    margin: 0 15px;
 
     &:focus {
       border-color: #ffffff99;
