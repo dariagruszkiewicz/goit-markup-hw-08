@@ -22,12 +22,21 @@
   </head>
   <body>
     <header class="portfolio-header-style">
-      <div class="header__container">
-        <div class="header">
+      <div class="header__container container">
+        <div class="header page-header">
+          <a class="logo header__logo" href="index.html">
+            <span class="logo logo--front-color">Web</span>Studio
+          </a>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-menu_24px"></use>
+            </svg>
+          </button>
           <nav class="nav">
-            <a class="logo nav__logo" href="index.html">
-              <span class="logo--front-color">Web</span>Studio
-            </a>
             <ul class="nav__list">
               <li>
                 <a class="nav__link" href="index.html">Agencja</a>
@@ -265,7 +274,7 @@
     <footer class="footer__bg">
       <div class="footer__container footer">
         <div>
-          <a class="logo" href="index.html">
+          <a class="logo footer__logo" href="index.html">
             <span class="logo logo--front-color">Web</span>
             <span class="logo logo--back-color">Studio</span>
           </a>
@@ -308,7 +317,7 @@
           <h3 class="footer-form__title">Zapisz się do newslettera</h3>
           <form>
             <div class="footer-form">
-              <label>
+              <label class="footer-form__label">
                 <input class="footer-form__input" type="email" name="email" placeholder="E-mail"
               /></label>
               <button class="footer-form__button" type="submit">

@@ -1,11 +1,12 @@
 .portfolio-button-list {
   display: flex;
-  width: 572px;
+  flex-wrap: wrap;
+  max-width: 100%;
   align-items: flex-start;
-  justify-content: space-between;
   gap: 8px;
-  margin: 0 auto;
   padding-bottom: 50px;
+  margin: 0 auto;
+  padding-left: 15px;
 
   &__item {
     font-weight: 500;
@@ -20,7 +21,12 @@
       background-color $transitionDurationDefault $transitionsFunctionDefault,
       box-shadow $transitionDurationDefault $transitionsFunctionDefault;
 
-    &:hover,
+    &:hover {
+      color: $secondaryColorWhite;
+      background-color: $specialColor;
+      cursor: pointer;
+      box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014, 0px 2px 2px #0000001f;
+    }
     &:focus {
       color: $secondaryColorWhite;
       background-color: $specialColor;
@@ -31,8 +37,18 @@
 }
 
 .portfolio-container {
-  @extend .container;
-  @extend .section;
+  max-width: 480px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.portfolio-header-style {
+  border-bottom: 1px solid #ececec;
 }
 
 .portfolio-images-list {
@@ -59,6 +75,11 @@
   &__item {
     border: 1px solid #ececec;
     transition: box-shadow $transitionDurationDefault $transitionsFunctionDefault;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
 
     &:hover {
       cursor: pointer;
@@ -94,6 +115,45 @@
   }
 }
 
-.portfolio-header-style {
-  border-bottom: 1px solid #ececec;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-button-list {
+    flex-wrap: nowrap;
+    width: 645px;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-left: 0;
+  }
+
+  .portfolio-images-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 0px;
+  }
+
+  .portfolio-container {
+    max-width: 768px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-button-list {
+    flex-wrap: nowrap;
+    width: 572px;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-left: 0;
+  }
+
+  .portfolio-container {
+    max-width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
