@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
-    url('../images/header/background-480.jpg');
+    url('../images/header/background-mobile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 480px;
@@ -54,26 +54,65 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px),
-  (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .first-section {
     background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
-      url('../images/header/background-768.jpg');
+      url('../images/header/background-mobile@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .first-section {
+    background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
+      url('../images/header/background-tablet.jpg');
     max-width: 768px;
   }
 }
 
-@media screen and (min-width: 1200px),
-  (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .first-section {
+    background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
+      url('../images/header/background-tablet@2x.jpg');
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .first-section {
     padding-top: 94px;
     padding-bottom: 94px;
     background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
-      url('../images/header/background.jpg');
+      url('../images/header/background-desktop.jpg');
+    max-width: 1600px;
+    height: 600px;
+
+    &__container {
+      max-width: 1200px;
+    }
+
+    &__title {
+      font-size: 2.75rem;
+      line-height: 1.36;
+      padding-top: 106px;
+      padding-right: 237px;
+      padding-left: 237px;
+    }
+    &__button {
+      margin: 30px 527px 106px 527px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .first-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
+      url('../images/header/background-desktop@2x.jpg');
     max-width: 1600px;
     height: 600px;
 
